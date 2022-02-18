@@ -1,0 +1,14 @@
+spring:
+  batch:
+    job:
+      enable: false
+    initialize-schema: always
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/batch
+    username: root
+    password: 12345678
+
+file:
+  input: src/main/resources/input.csv
+  output: src/main/resources/output.json
